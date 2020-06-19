@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2b4b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLoginFbNorm">#CC385289</color>
+    <color name="colorLoginFbPressed">#CC1b3f8b</color>
+    <color name="colorLoginTwitterNorm">#CC3b8fdc</color>
+    <color name="colorLoginTwitterPressed">#CC157ddd</color>
+    <color name="colorLoginEmailNorm">#D9dc102c</color>
+    <color name="colorLoginEmailPressed">#D9e80427</color>
+    <color name="colorSignUpBtnPressed">#CCc4c2c2</color>
+    <color name="colorPageIndicator">#BF8b8888</color>
+    <color name="colorNavDrawerBg">#FF4081</color>
+    <color name="colorNavItemPressed">#303F9F</color>
+    <color name="colorHomeDivider">#cccccc</color>
+    <color name="colorHomeHeaderBtnPressed">#bcb9b9</color>
+    <color name="colorBottomMenuItem">#7f7f7f</color>
+    <color name="colorMenuIcon">#cccccc</color>
+    <color name="colorMenuIconPressed">#ff2b4b</color>
+    <color name="colorGrayDivider">#ededed</color>
+    <color name="colorGrayText">#999999</color>
+    <color name="colorBasicText">#333333</color>
+    <color name="colorSendCommentPressed">#c91833</color>
+    <color name="colorSearchIcon">#E6ffffff</color>
+    <color name="colorSemiTransBlack">#99000000</color>
+    <color name="colorFollowPressed">#8ee76b</color>
+</resources>

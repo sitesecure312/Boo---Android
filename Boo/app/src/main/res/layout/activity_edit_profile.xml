@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--android:background="@android:color/white"-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/fields_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/basic_screens_side_margin"
+        android:layout_marginRight="@dimen/basic_screens_side_margin"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_username"
+            style="@style/BlackRegularFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_gray_login_username_18dp"
+            android:drawablePadding="@dimen/login_drawable_padding"
+            android:hint="@string/sign_up_username"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Christina Booed"
+            android:textColorHint="@color/colorGrayText" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/BlackRegularFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_gray_email_18dp"
+            android:drawablePadding="@dimen/login_drawable_padding"
+            android:hint="@string/email_login"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColorHint="@color/colorGrayText" />
+
+        <EditText
+            android:id="@+id/edit_location"
+            style="@style/BlackRegularFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_gray_near_you_18dp"
+            android:drawablePadding="@dimen/login_drawable_padding"
+            android:hint="@string/edit_location_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Seattle, Washington"
+            android:textColorHint="@color/colorGrayText" />
+
+        <EditText
+            android:id="@+id/profile_description"
+            style="@style/BlackRegularFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_description_gray_18dp"
+            android:drawablePadding="@dimen/login_drawable_padding"
+            android:hint="@string/edit_description_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="@string/content"
+            android:textColorHint="@color/colorGrayText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

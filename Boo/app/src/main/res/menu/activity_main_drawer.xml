@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about_24dp"
+            android:title="@string/nav_about" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_30dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_30dp"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_contact_us_30dp"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_change_password_30dp"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_30dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

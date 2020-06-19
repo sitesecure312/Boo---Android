@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/home_screen_side_margin"
+    android:paddingRight="@dimen/home_screen_side_margin"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/comment_profile_img"
+        android:layout_width="@dimen/profile_img_size"
+        android:layout_height="@dimen/profile_img_size"
+        android:layout_marginBottom="@dimen/profile_img_margin"
+        android:layout_marginTop="@dimen/profile_img_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_screen_side_margin"
+        android:layout_toRightOf="@+id/comment_profile_img"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/BlackBoldFont" />
+
+            <TextView
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@style/GrayRegularFont"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBasicText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

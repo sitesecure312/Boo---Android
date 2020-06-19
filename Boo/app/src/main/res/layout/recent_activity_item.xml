@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/home_screen_side_margin"
+    android:paddingRight="@dimen/home_screen_side_margin"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/recent_activity_profile_img"
+        android:layout_width="@dimen/profile_img_size"
+        android:layout_height="@dimen/profile_img_size"
+        android:layout_marginBottom="@dimen/profile_img_margin"
+        android:layout_marginTop="@dimen/profile_img_margin" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_screen_side_margin"
+        android:gravity="center"
+        android:textAppearance="@style/BlackRegularFont" />
+
+    <TextView
+        android:id="@+id/recent_activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:textAppearance="@style/GrayRegularFont" />
+
+    <TextView
+        android:id="@+id/recent_activity_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:text="@string/recent_activity_subject"
+        android:textAppearance="@style/BlackRegularFont" />
+
+    <TextView
+        android:id="@+id/recent_activity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:textAppearance="@style/GrayRegularFont" />
+
+</LinearLayout>

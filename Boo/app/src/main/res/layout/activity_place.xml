@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/search_places_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/basic_screens_side_margin"
+        android:layout_marginRight="@dimen/basic_screens_side_margin"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_gray_search_18dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/colorGrayText"
+        android:gravity="center_vertical"
+        android:hint="@string/search_places_hint"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textAppearance="@style/BlackRegularFont"
+        android:textColorHint="@color/colorGrayText"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/comment_layout"
+        android:background="@color/colorHomeDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="There are no places yet..."
+        android:textColor="@color/colorGrayText"
+        android:textSize="18sp" />
+
+</LinearLayout>

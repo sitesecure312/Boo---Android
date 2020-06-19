@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_profile" />
+
+            <ImageView
+                android:id="@+id/edit_profile"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/basic_screens_side_margin"
+                android:background="@drawable/edit_profile_button"
+                android:clickable="true"
+                android:src="@drawable/ic_edit_profile_32dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@style/BlackBoldFont"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textAppearance="@style/GrayRegularFont"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/profile_img_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/user_location"
+                android:layout_marginLeft="@dimen/home_screen_side_margin"
+                android:layout_marginRight="@dimen/home_screen_side_margin"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorHomeDivider" />
+
+            <TextView
+                android:id="@+id/profile_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_img_divider"
+                android:layout_marginLeft="@dimen/home_screen_side_margin"
+                android:layout_marginRight="@dimen/home_screen_side_margin"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAppearance="@style/BlackRegularFont" />
+
+            <View
+                android:id="@+id/profile_content_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/profile_description"
+                android:layout_marginLeft="@dimen/home_screen_side_margin"
+                android:layout_marginRight="@dimen/home_screen_side_margin"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorHomeDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_content_divider"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/following_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/following"
+                        android:textAppearance="@style/GrayRegularFont"
+                        android:textColor="@color/follow_btn_color" />
+
+                    <TextView
+                        android:id="@+id/following_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAppearance="@style/BlackBoldFont"
+                        android:textColor="@color/home_screen_top_menu_item"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/followers_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/followers"
+                        android:textAppearance="@style/GrayRegularFont"
+                        android:textColor="@color/follow_btn_color" />
+
+                    <TextView
+                        android:id="@+id/followers_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAppearance="@style/BlackBoldFont"
+                        android:textColor="@color/home_screen_top_menu_item"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/posts_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/posts"
+                        android:textAppearance="@style/GrayRegularFont"
+                        android:textColor="@color/follow_btn_color" />
+
+                    <TextView
+                        android:id="@+id/posts_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAppearance="@style/BlackBoldFont"
+                        android:textColor="@color/home_screen_top_menu_item"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bootique_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_img_size"
+            android:layout_height="@dimen/profile_img_size"
+            android:layout_marginLeft="@dimen/basic_screens_side_margin"
+            android:layout_marginRight="10dp"
+           />
+
+        <EditText
+            android:id="@+id/post_field"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="@string/post_hint"
+            android:maxLines="15"
+            android:textAppearance="@style/BlackRegularFont"
+            android:textColorHint="@color/colorGrayText"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/photo_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/photo_post"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorHomeDivider"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:id="@+id/photo_post"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@+id/post_btn_divider"
+            android:layout_below="@+id/post_field"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/post_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/post_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/basic_screens_side_margin"
+                android:src="@drawable/ic_photo_gray_24dp" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/post_video_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/basic_screens_side_margin"
+                android:src="@drawable/ic_videocam_grey_600_24dp" />
+            <ImageView
+                android:id="@+id/post_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_place_gray_24dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/post_btn_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/post_buttons_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorHomeDivider" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

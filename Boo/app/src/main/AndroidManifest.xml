@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boo.app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.WalkThroughActivity" />
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeDark.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.EmailLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EmailLoginActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.LoginActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EmailLoginActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.WalkThroughActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.WalkThroughActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.FollowersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.FollowingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.FullPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PostToBooActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SharePostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PlaceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.RedToolbar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boo.app.ui.activity.MainActivity" />
+
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0d720efcd2e7fdbd31b2ce3343f4e898da62e4c9" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+    </application>
+
+
+</manifest>

@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.RedToolbar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorRedStatusBar</item>
+    </style>
+
+    <style name="EmailLoginActivity" parent="AppThemeDark.NoActionBar">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTextViewStyle">
+        <item name="android:layout_marginLeft">@dimen/splash_screen_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/splash_screen_side_margin</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!--<style name="BlackRegularFont" parent="TextAppearance.FontPath">-->
+    <!--<item name="android:textColor">@color/colorBasicText</item>-->
+    <!--<item name="android:textSize">13sp</item>-->
+    <!--</style>-->
+
+    <!--<style name="GrayRegularFont" parent="TextAppearance.FontPath">-->
+    <!--<item name="android:textColor">@color/colorGrayText</item>-->
+    <!--<item name="android:textSize">13sp</item>-->
+    <!--</style>-->
+
+    <style name="GrayRegularFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorGrayText</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+    </style>
+
+    <!--<style name="GrayBoldFont" parent="TextAppearance.BoldFontPath">-->
+    <!--<item name="android:textColor">@color/colorGrayText</item>-->
+    <!--<item name="android:textSize">10sp</item>-->
+    <!--</style>-->
+
+    <style name="GrayBoldFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorGrayText</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WhiteBoldFont" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="NavMenuItemText" parent="TextAppearance.FontPath">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--<style name="TextAppearance.BoldFontPath" parent="android:TextAppearance">-->
+    <!--<item name="fontPath">fonts/Montserrat-Bold.ttf</item>-->
+    <!--<item name="android:textColor">@color/colorPrimary</item>-->
+    <!--<item name="android:textSize">12sp</item>-->
+    <!--</style>-->
+
+    <style name="ColorPrimaryTitleFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--<style name="BlackBoldFont" parent="TextAppearance.BoldFontPath">-->
+    <!--<item name="android:textColor">@color/colorBasicText</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--</style>-->
+    <style name="BlackBoldFont" parent="android:TextAppearance">
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBasicText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BlackRegularFont" parent="android:TextAppearance">
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBasicText</item>
+    </style>
+
+    <color name="colorRedStatusBar">#df2642</color>
+</resources>
